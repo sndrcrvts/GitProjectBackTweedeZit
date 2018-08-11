@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ecoplan</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- -->
+    <link rel="icon" href="assets/favicon.ico">
+    <!-- -->
+    <link rel="stylesheet" href="./dist/css/reset.css">
+    <link rel="stylesheet" href="./dist/css/app.css">
+</head>
+<body>
+    <header>
+        <div id="login">
+            <h3>Log in</h3>
+            <form id="loginForm">
+                <input type="email" name="regEmail" id="log-email" placeholder="email" required/>
+                <input type="password" name="regPass" id="log-pass" placeholder="wachtwoord" required/>
+                <button type="button" id="log-button">Log in</button>
+            </form>
+        </div>
+        <div id="registreren">
+            <h3>Registreren</h3>
+            <form id="registerForm">
+                <input type="text" name="regFName" id="reg-fname" placeholder="voornaam" required/>
+                <input type="text" name="regLName" id="reg-lname" placeholder="achternaam" required/>
+                <input type="email" name="regEmail" id="reg-email" placeholder="email" required/>
+                <input type="password" name="regPass" id="reg-pass" placeholder="wachtwoord" required/>
+                <button type="button" id="reg-button">Registreren</button>
+            </form>
+
+        </div>
+        <div id="welkom"></div>
+
+        <div id="logout">
+            <button type="button" id="logout-button">Log uit</button>
+        </div>
+
+    </header>
+    
+    <section id="notification"></section>
+    <section id="zoekbalk">
+        <input type="text" placeholder="zoeken naar..." id="filter" class="form-control" />
+        <button id="searchButton" >
+            Zoeken
+        </button>
+    </section>
+    <section id="zoekinhoud">
+    </section>
+    <section id="commentaren">
+    </section>
+<script src="./dist/js/app.js"></script>
+</body>
+</html>
