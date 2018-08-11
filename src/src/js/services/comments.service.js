@@ -1,9 +1,9 @@
 import $ from 'jquery';
 import NotificationService from './notification.service';
 
-const newCommentUrl = "http://localhost:3000/comments/addNew";
-const loadCommentUrl = "http://localhost:3000/comments/byNameAdressNumber";
-const socketUrl = "http://localhost:4000";
+const newCommentUrl = "https://obscure-reaches-45273.herokuapp.com:3000/comments/addNew";
+const loadCommentUrl = "https://obscure-reaches-45273.herokuapp.com:3000/comments/byNameAdressNumber";
+const socketUrl = "https://obscure-reaches-45273.herokuapp.com:4000";
 
 function loadComments(ecoplan, straat, nummer) {
 

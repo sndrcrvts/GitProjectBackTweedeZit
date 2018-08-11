@@ -1,9 +1,9 @@
 import $ from 'jquery';
 import NotificationService from './notification.service';
 
-let loginUrl = "http://localhost:3000/auth/login";
-let registerUrl = "http://localhost:3000/auth/register";
-let verifyUrl = "http://localhost:3000/auth/verify";
+let loginUrl = "https://obscure-reaches-45273.herokuapp.com:3000/auth/login";
+let registerUrl = "https://obscure-reaches-45273.herokuapp.com:3000/auth/register";
+let verifyUrl = "https://obscure-reaches-45273.herokuapp.com:3000/auth/verify";
 
 function login(user) {
     $.ajax({

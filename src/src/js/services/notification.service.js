@@ -2,7 +2,7 @@ import $ from 'jquery';
 import io from 'socket.io-client';
 import NotificationHelper from '../helpers/showNotification';
 
-let socket = io.connect("http://localhost:4000");
+let socket = io.connect("https://obscure-reaches-45273.herokuapp.com:4000");
 
 function connectSocket() {
     let token = JSON.parse(localStorage.getItem("CurrentUser"))['token'];
