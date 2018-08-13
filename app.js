@@ -28,7 +28,7 @@ app.use('/users', usersRouter);
 app.use('/comments', commentsRouter);
 
 app.get("/", (req, res) => {
-    res.send("Hello world");
+    res.send("index.html");
 });
 
 app.listen(port, () => {
