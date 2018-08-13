@@ -19502,7 +19502,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var loginUrl = "https://obscure-reaches-45273.herokuapp.com:3000/auth/login";
 var registerUrl = "https://obscure-reaches-45273.herokuapp.com:3000/auth/register";
-var verifyUrl = "https://obscure-reaches-45273.herokuapp.com:3000/auth/verify";
+var verifyUrl = "https://obscure-reaches-45273.herokuapp.com:3000/auth/verify";//obscure-reaches-45273.herokuapp.com
 
 function login(user) {
     _jquery2.default.ajax({

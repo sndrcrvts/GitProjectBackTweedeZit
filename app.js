@@ -28,8 +28,13 @@ app.use('/auth', authentication);
 app.use('/users', usersRouter);
 app.use('/comments', commentsRouter);
 
+app.use(express.static(__dirname + '/'));
+//Store all HTML files in view folder.
+app.use(express.static(__dirname + './src'));
+//Store all JS and CSS in Scripts folder.
+
 app.get("/", (req, res) => {
-    res.sendfile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.listen(port, () => {
