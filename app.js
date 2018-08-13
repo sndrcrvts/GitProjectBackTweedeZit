@@ -6,6 +6,7 @@ const cors = require('cors');
 const DBService = require("./data/connectDBService.js");
 var port = config.PORT;
 var mongoose = require("mongoose");
+var path = require('path');
 
 
 let io = require("socket.io").listen(4000);
@@ -21,8 +22,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static('public'));
-
 app.options('*', cors())
 
 app.use('/auth', authentication);
@@ -30,7 +29,7 @@ app.use('/users', usersRouter);
 app.use('/comments', commentsRouter);
 
 app.get("/", (req, res) => {
-    res.sendfile("index.html");
+    res.sendfile(path.join(__dirname + '/index.html'));
 });
 
 app.listen(port, () => {
